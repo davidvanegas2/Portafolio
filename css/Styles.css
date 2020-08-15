@@ -13,3 +13,28 @@ body header nav ol li a{ /*Este es un selector descendente = Por todos los hijos
 }
 /*.link -> Este es un selector de clase*/
 /* #portafolio -> Selector de id*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    /*font-style: italic; Representa el estilo de la tipografia*/
+}
+
+h1{
+    line-height: 1.5em;
+    font-size: 40px;
+    letter-spacing: -1px;
+    /*text-transform: uppercase; Funciona para el diseño de la tipografia*/
+    text-decoration: overline;
+    text-decoration-color: blue;
+    
+}
