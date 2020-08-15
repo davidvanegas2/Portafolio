@@ -1,77 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            David Vanegas
-        </title>
-        <link rel="icon" type="image/jpg" href="imagenes/logo_size.jpg"/>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/Styles.css">
-    </head>
-    <body>
-        <header class="header">
-            <figure class="logo">
-                <img src="https://i.imgur.com/OUv24qd.jpg" alt="Logo"/>
-            </figure>
-            <nav class="menu">
-                <ol>
-                    <li>
-                        <a class="link" href="#portafolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#certificados">Estudios</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#contacto">Contacto</a>
-                    </li>
-                </ol>
-            </nav>
-        </header>
-        <section class="hero">
-            <h1>
-                Hola! Soy <strong>David Vanegas</strong> <br> Estudiante que quiere aprender mucho
-            </h1>
-            <img src="https://i.imgur.com/RTfNfSq.jpg" width="200" alt="Imagen principal del sitio"/>
-        </section>
-        <section class="portfolio" id="portafolio">
-            <h2>
-                Portafolio
-            </h2>
-            <article class="proyect">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        David Vanegas
+    </title>
+    <link rel="icon" type="image/jpg" href="imagenes/logo_size.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/Styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <figure class="logo">
+            <img src="https://i.imgur.com/JupsNpi.jpg" alt="Logo" width="100px" />
+        </figure>
+
+        <nav class="menu">
+            <ol>
+                <li>
+                    <a class="link" href="#portafolio">Portafolio</a>
+                </li>
+                <li>
+                    <a class="link" href="#certificados">Estudios</a>
+                </li>
+                <li>
+                    <a class="link" href="#contacto">Contacto</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>
+            Hola! Soy <strong>David Vanegas</strong> <br> Estudiante que quiere aprender mucho
+        </h1>
+        <img src="https://i.imgur.com/RTfNfSq.jpg" alt="Image of hero" class="hero-imageContainer"/>
+    </section>
+    <section class="portfolio" id="portafolio">
+        <h2>
+            Portafolio
+        </h2>
+        <article class="project">
+            <div class="project-details">
                 <h3 class="project-title">Estudiante de Platzi</h3>
                 <h6 class="project-course">Curso de Desarrollo Web</h6>
                 <p class="project-date"> <small> <strong>Fecha:</strong> 12/08/2020</small> </p>
-                <p class="project-link"> <small> <strong>Puedes verlo en:</strong> www.github.com/davidvanegas2</small> </p>
-                <p class="project-description">
-                    Estoy aprendiendo a manejar archivos para el desarrollo web como lo son html y .css
+                <p class="project-link"> <small> <strong>Puedes verlo en:</strong> www.github.com/davidvanegas2</small>
                 </p>
-                <figure class="project-imageContainer">
-                    <img class="project-image" src="imagenes/pipe.jpeg" width="20%"/>
-                </figure>
-            </article>
-        </section>
-        <section id="certificados"> 
-            <h2>Certificados</h2>
-            <article class="certificate">
-                <h3 class="certificate-title">
-                    Curso profesional de Git y GitHub
-                </h3>
-                <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Repositorio GitHub</a>
-                <figure class="certificate-imageContainer">
-                    <img class="certificate-image" src="imagenes/favicon.png" width="20%"/>
-                </figure>
-            </article>
-        </section>
-        <section id="contacto" class="contact">
-            <form action="/suscripcion/" class="form-email">
-                <h3>¿Te quieres comunicar conmigo?</h3>
-                <input type="text" placeholder="Deja tu email" />
-                <button>Enviar</button>
-            </form>
-        </section>
-        <footer class="footer">
-            Pie de pagina
-        </footer>
-    </body>
+                <p class="project-description">
+                    Estoy aprendiendo a manejar archivos para el desarrollo web como lo son html y .css asi que en unos
+                    dias voy a tener mi primera pagina web completamente funcional mostrando todo lo que he aprendido
+                </p>
+            </div>
+
+            <figure class="project-imageContainer">
+                <img class="project-image" src="imagenes/pipe.jpeg" width="300px" />
+            </figure>
+        </article>
+        <article class="project">
+            <div class="project-details">
+                <h3 class="project-title">Estudiante de la Pontificia Universidad Javeriana</h3>
+                <h6 class="project-course">Estudiante de 8 semestre</h6>
+                <p class="project-date"> <small> <strong>Fecha:</strong> 12/08/2020</small> </p>
+                <p class="project-link"> <small> Se gradua en el año 2021 </small></p>
+                <p class="project-description">
+                    En el proximo año comienza a realizar la tesis
+                </p>
+            </div>
+
+            <figure class="project-imageContainer">
+                <img class="project-image" src="imagenes/pipe.jpeg" width="300px" />
+            </figure>
+        </article>
+    </section>
+    <section id="certificados">
+        <h2>Certificados</h2>
+        <article class="certificate">
+            <h3 class="certificate-title">
+                Curso profesional de Git y GitHub
+            </h3>
+            <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Repositorio GitHub</a>
+            <figure class="certificate-imageContainer">
+                <img class="certificate-image" src="imagenes/favicon.png" width="20%" />
+            </figure>
+        </article>
+    </section>
+    <section id="contacto" class="contact">
+        <form action="/suscripcion/" class="form-email">
+            <h3>¿Te quieres comunicar conmigo?</h3>
+            <input type="text" placeholder="Deja tu email" />
+            <button>Enviar</button>
+        </form>
+    </section>
+    <footer class="footer">
+        Pie de pagina
+    </footer>
+</body>
+
 </html>
