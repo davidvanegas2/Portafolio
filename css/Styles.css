@@ -1,3 +1,15 @@
-body{
-    background: rebeccapurple;
+/*Este es un archivo .css
+Selector = Nombre de las etiquetas HTML
+Declaracion = Todo lo que va dentro de los corchetes
+Propiedad = Propiedad de cada etiqueta de HTML
+Valores = El valor que se le asigna a cada propiedad
+*/
+header{ /*Este es un selector de etiqueta = Por el nombre de la etiqueta HTML */
+    background: black;
+    color: white;
 }
+body header nav ol li a{ /*Este es un selector descendente = Por todos los hijos que tiene la ruta */
+    background: white;
+}
+/*.link -> Este es un selector de clase*/
+/* #portafolio -> Selector de id*/

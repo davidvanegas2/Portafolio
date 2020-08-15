@@ -7,69 +7,69 @@
         </title>
         <link rel="icon" type="image/jpg" href="imagenes/logo_size.jpg"/>
         <link rel="stylesheet" href="css/Styles.css">
-        <style>
-            header{
-                background: black;
-                color: white;
-            }
-        </style>
     </head>
     <body>
-        <header style="color: white;">
-            <figure>
+        <header class="header">
+            <figure class="logo">
                 <img src="https://i.imgur.com/OUv24qd.jpg" alt="Logo"/>
             </figure>
-            <nav>
+            <nav class="menu">
                 <ol>
                     <li>
-                        <a href="#portafolio">Portafolio</a>
+                        <a class="link" href="#portafolio">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#certificados">Estudios</a>
+                        <a class="link" href="#certificados">Estudios</a>
                     </li>
                     <li>
-                        <a href="#contacto">Contacto</a>
+                        <a class="link" href="#contacto">Contacto</a>
                     </li>
                 </ol>
             </nav>
         </header>
-        <section>
+        <section class="hero">
             <h1>
                 Hola! Soy <strong>David Vanegas</strong> <br> Estudiante que quiere aprender mucho
             </h1>
             <img src="https://i.imgur.com/RTfNfSq.jpg" width="200" alt="Imagen principal del sitio"/>
         </section>
-        <section id="portafolio">
+        <section class="portfolio" id="portafolio">
             <h2>
                 Portafolio
             </h2>
-            <article>
-                <h3>Estudiante de Platzi</h3>
-                <h6>Curso de Desarrollo Web</h6>
-                <p> <small> <strong>Fecha:</strong> 12/08/2020</small> </p>
-                <p> <small> <strong>Puedes verlo en:</strong> www.github.com</small> </p>
+            <article class="proyect">
+                <h3 class="project-title">Estudiante de Platzi</h3>
+                <h6 class="project-course">Curso de Desarrollo Web</h6>
+                <p class="project-date"> <small> <strong>Fecha:</strong> 12/08/2020</small> </p>
+                <p class="project-link"> <small> <strong>Puedes verlo en:</strong> www.github.com/davidvanegas2</small> </p>
+                <p class="project-description">
+                    Estoy aprendiendo a manejar archivos para el desarrollo web como lo son html y .css
+                </p>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="imagenes/pipe.jpeg" width="20%"/>
+                </figure>
             </article>
         </section>
         <section id="certificados"> 
             <h2>Certificados</h2>
-            <article>
-                <h3>
+            <article class="certificate">
+                <h3 class="certificate-title">
                     Curso profesional de Git y GitHub
                 </h3>
-                <a href="https://github.com/davidvanegas2" target="_blank">Repositorio GitHub</a>
-                <figure>
-                    <img src="imagenes/favicon.png" width="20%"/>
+                <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Repositorio GitHub</a>
+                <figure class="certificate-imageContainer">
+                    <img class="certificate-image" src="imagenes/favicon.png" width="20%"/>
                 </figure>
             </article>
         </section>
-        <section id="contacto">
-            <form action="/suscripcion/">
+        <section id="contacto" class="contact">
+            <form action="/suscripcion/" class="form-email">
                 <h3>¿Te quieres comunicar conmigo?</h3>
                 <input type="text" placeholder="Deja tu email" />
                 <button>Enviar</button>
             </form>
         </section>
-        <footer>
+        <footer class="footer">
             Pie de pagina
         </footer>
     </body>
