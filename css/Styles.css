@@ -14,6 +14,10 @@ Valores = El valor que se le asigna a cada propiedad
     display: flex;
     justify-content: space-between;
     height: 100px;
+    align-items: center;
+}
+.header img{
+    vertical-align: middle;
 }
 
 .menu{
@@ -54,28 +58,33 @@ h3,
 h4,
 h5,
 h6{
+    text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: bolder;
     /*font-style: italic; Representa el estilo de la tipografia*/
 }
 
-ol,
-ul{
+ol{
     list-style: none;
+}
+
+ul{
+    line-height: 35px;
 }
 
 header nav ol{
     margin: 0px 10px;
 }
 
-/* h1{
+h1{
+    line-height: 40px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    margin: 0;
     /* margin: 0px 10px 0px 10px; */
     /*text-transform: uppercase; Funciona para el diseño de la tipografia
     text-decoration: overline; Decoracion de la tipografia
-    text-decoration-color: blue; Subramas de text-decoration
-} */
-h1 strong{
-    color: black;
+    text-decoration-color: blue; Subramas de text-decoration*/
 }
 
 .project{
@@ -88,9 +97,16 @@ h1 strong{
     border-width: 0.5em; */
     border: 1px gray solid;
     border-radius: 10px;
-    margin: 10px 0px;
+    margin: 10px auto;
     background: white;
-    padding: 20px;
+    padding: 10px; 
+    display: flex;
+    width: 620px;
+    align-items: center;
+    justify-content: space-between ;
+}
+.project-title{
+    font-size: 35px;
 }
 .project-details{
     width: 600px;
@@ -102,27 +118,25 @@ h1 strong{
 }
 
 .hero{
+    height: 400px;
+    /* background-image: url('https://i.imgur.com/RTfNfSq.jpg'); */
+    /* background-size: 400px; */
+    /* background-repeat: no-repeat;
+    background-position-x: right; */
     background-color: #FFF8B4;
-    padding: 100px;
-    position: relative;
-    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
-.hero h1{
-    margin: 15px;
-    line-height: 3em;
-    font-size: 40px;
-    letter-spacing: -1px;
-    text-align: center;
-    padding: 20px;
-    position: relative;
+.hero-image{
+    object-fit: cover;
 }
-.hero-imageContainer{
-    position: absolute;
-    opacity: 0.15;
-    height: 440px;
-    top:0;
-    margin: 50px 300px;
+
+.hero h1 strong{
+    font-weight: bolder;
 }
+
 .header a{
     color: white;
     text-decoration: none;
@@ -131,6 +145,13 @@ h1 strong{
 
 .portfolio{
     background: #FAFAFA;
+    padding: 20px;
+}
+
+.portfolio-elements{
+    display: flex;
+    flex-shrink: 40;
+    flex-wrap: wrap;
 }
 
 .flexbox{
@@ -144,4 +165,129 @@ h1 strong{
     border: black 1px solid;
     flex-shrink: 0; /* Nivel de encogimiento de los hijos con display flex */
     margin: 15px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    color: white;
+}
+.footer p{
+    margin: 16px 0px 16px 10px;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
+    margin: 16px 16px 16px 0px;
+}
+
+.certificate{
+    padding: 20px;
+}
+.certificate-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.certificate-element{
+    width: 410px;
+    border: #141414 1px solid;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: #FFF8B4;
+}
+.certificate-element h3{
+    margin: 0;
+}
+.certificate-imageDiploma{
+    height: 270px;
+    width: 410px;
+    object-fit: cover;
+}
+.certificate-imageContainer{
+    margin: 5px;
+}
+.certificate-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-top: -50px;
+    position: relative;
+    padding: 10px;
+    margin: -40px 20px 20px 20px;
+    text-align: center;
+}
+.certificate-link{
+    border: 1px #141414 solid;
+    padding: 5px 20px;
+    color: #141414;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-email input{
+    border-color: gray;
+    padding: 5px 25px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAP1BMVEX///9UbnqwvsWptrx7j5n3+Pnn6+zFztJ5jJdheoVWcX2Wp65ac4Dk6Oq3wsf6+vujsbhxhpDd4+XS2dy6xMkRydyaAAAB+UlEQVR4nO3a25KCMBAE0LCKEMItuP//rQtKgFysjWCmsWrmTaukD0nMUwuxTF6oUtZZ4qllqYpc+HNTybM3CnVz4ru+ooufpuo76/U1bfw0erMIg6TPzzI5LO8PyR8F8xp0gPV/jn6egx6Vn2X9YwPW86/bxjqbKaZr2nXFq2kTlPlU/6YON9Mu76zG+8/cP9WdKl+IuxHUuSgMpqXLH9fApBbLDmjKfCH0sgclYgHWJSiFuYQaWkAzx0phjkPy/589nTn6wpwG2nyx5jKAAQw4LeDnw8MABjDg+wCphwEMYMD5AfCLiAEMYAAckHoYwAAGnB9w9KJhAAMY8P2A1MMABjCAAQxgAAPOAwAVGPI5tsJXOOAlFniNB15kwla5qhxfZqOu8+VenS++0HgN1YFjfxycR6HxjUpnSHAkX8/Piy+1BgQH8uVS7I2v9fqCA/nD+pT4YrMn2J2vrXZ3fLXbFeyMd6rd0yKoSIIj2BXvl9unyQt1lREKW/BudiWv4Xr/f3N5ITBf7njkZwR0gBcCQkBYQAkICkgBIQEtICAgBvgCaoAnIAe4AnqAIwAAbAECYAkggK0AAwgIiAG+gBrgCcgBroAe4AgAAFuAAFgCCGArwAA2AhBgFaAAiwAGMAIcYBYAAU8BEvAQQAGTAAsYBWCAuOz94R/IESL0zrB3cgAAAABJRU5ErkJggg==);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    border-radius: 5px;
+    border-style: solid;
+}
+.form-email{
+    margin: 0px 15px;
+}
+.form-email button{
+    display: block;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    padding: 5px 20px;
+    margin-left: 0;
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.social-link.twitter{
+    background-image: url(https://cdn.iconscout.com/icon/free/png-256/twitter-1722376-1466162.png);
+    background-size: 50px 50px;
+}
+
+.social-link.instagram{
+    background-image: url(https://cdn.icon-icons.com/icons2/1753/PNG/128/iconfinder-social-media-applications-3instagram-4102579_113804.png);
+    background-size: 50px 50px;
+}
+.container{
+    /* border: 1px red solid; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
 }

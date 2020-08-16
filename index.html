@@ -14,88 +14,157 @@
 
 <body>
     <header class="header">
-        <figure class="logo">
-            <img src="https://i.imgur.com/JupsNpi.jpg" alt="Logo" width="100px" />
-        </figure>
-
-        <nav class="menu">
-            <ol>
-                <li>
-                    <a class="link" href="#portafolio">Portafolio</a>
-                </li>
-                <li>
-                    <a class="link" href="#certificados">Estudios</a>
-                </li>
-                <li>
-                    <a class="link" href="#contacto">Contacto</a>
-                </li>
-            </ol>
-        </nav>
+        <div class="container">
+            <figure class="logo">
+                <p>
+                    <img src="https://i.imgur.com/JupsNpi.jpg" alt="Logo" width="100px" />
+                    ALANCA
+                </p>
+            </figure>
+    
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a class="link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#certificados">Estudios</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contacto">Contacto</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
     </header>
     <section class="hero">
-        <h1>
-            Hola! Soy <strong>David Vanegas</strong> <br> Estudiante que quiere aprender mucho
-        </h1>
-        <img src="https://i.imgur.com/RTfNfSq.jpg" alt="Image of hero" class="hero-imageContainer"/>
+        <div class="container">
+            <h1>
+                Hola! Soy <strong>David Vanegas</strong> <br> Estudiante y desarrollador siempre buscando <br> creatividad y
+                amor por la <strong>web</strong>
+            </h1>
+            <img class="hero-image" src="https://i.imgur.com/RTfNfSq.jpg" alt="" width="400px">
+        </div>
     </section>
     <section class="portfolio" id="portafolio">
-        <h2>
-            Portafolio
-        </h2>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Estudiante de Platzi</h3>
-                <h6 class="project-course">Curso de Desarrollo Web</h6>
-                <p class="project-date"> <small> <strong>Fecha:</strong> 12/08/2020</small> </p>
-                <p class="project-link"> <small> <strong>Puedes verlo en:</strong> www.github.com/davidvanegas2</small>
-                </p>
-                <p class="project-description">
-                    Estoy aprendiendo a manejar archivos para el desarrollo web como lo son html y .css asi que en unos
-                    dias voy a tener mi primera pagina web completamente funcional mostrando todo lo que he aprendido
-                </p>
+        <div class="container">
+            <h2>
+                <strong>Portafolio</strong>
+            </h2>
+            <div class="portfolio-elements">
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">HTML5</h3>
+                        <h4 class="project-course">HTML5 es la última versión de HTML. El término representa dos conceptos
+                            diferentes:</h4>
+                        <nav>
+                            <ul>
+                                <li>
+                                    Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <figure class="project-imageContainer">
+                        <img class="project-image"
+                            src="https://lh3.googleusercontent.com/proxy/aYxBZW5YQWH-oQQTf5dAa_bxX8r1DeAOyKXjWrnnnpPJnP4owSTnKwlYn8_xyZKBEwziGNXU7ndd9sXRLrnpRvoqe2dHmf7UtuOO2RMwHaakkeF8gXAUfjaPP_3gHpQ"
+                            width="300px" />
+                    </figure>
+                </article>
+                <article class="project">
+                    <div class="project-details">
+                        <h3 class="project-title">CSS3</h3>
+                        <h4 class="project-course">CSS3 es la última evolución del lenguaje de las Hojas de Estilo en
+                            Cascada. Trae consigo muchas novedades altamente esperadas , como las esquinas redondeadas,
+                            sombras, gradientes y muchas cosas mas</h4>
+                    </div>
+    
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="https://rolandocaldas.com/wp-content/uploads/2013/05/css3.png"
+                            width="300px" />
+                    </figure>
+                </article>
             </div>
-
-            <figure class="project-imageContainer">
-                <img class="project-image" src="imagenes/pipe.jpeg" width="300px" />
-            </figure>
-        </article>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Estudiante de la Pontificia Universidad Javeriana</h3>
-                <h6 class="project-course">Estudiante de 8 semestre</h6>
-                <p class="project-date"> <small> <strong>Fecha:</strong> 12/08/2020</small> </p>
-                <p class="project-link"> <small> Se gradua en el año 2021 </small></p>
-                <p class="project-description">
-                    En el proximo año comienza a realizar la tesis
-                </p>
-            </div>
-
-            <figure class="project-imageContainer">
-                <img class="project-image" src="imagenes/pipe.jpeg" width="300px" />
-            </figure>
-        </article>
+        </div>
     </section>
-    <section id="certificados">
-        <h2>Certificados</h2>
-        <article class="certificate">
-            <h3 class="certificate-title">
-                Curso profesional de Git y GitHub
-            </h3>
-            <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Repositorio GitHub</a>
-            <figure class="certificate-imageContainer">
-                <img class="certificate-image" src="imagenes/favicon.png" width="20%" />
-            </figure>
-        </article>
+    <section class="certificate">
+        <div class="container">
+            <h2>Certificados</h2>
+            <div class="certificate-list">
+                <article class="certificate-element">
+                    <img src="imagenes/certificado-Git.jpg" alt="" class="certificate-imageDiploma" />
+                    <div class="certificate-detail">
+                        <h3 class="certificate-title">
+                            Curso profesional de Git y GitHub
+                        </h3>
+                        <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Ver
+                            certificado</a>
+                        <figure class="certificate-imageContainer">
+                            <img class="certificate-image"
+                                src="https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png"
+                                width="50px" />
+                        </figure>
+                    </div>
+                </article>
+                <article class="certificate-element">
+                    <img src="imagenes/certificado-Git.jpg" alt="" class="certificate-imageDiploma" />
+                    <div class="certificate-detail">
+                        <h3 class="certificate-title">
+                            Curso de desarrollo web online
+                        </h3>
+                        <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Ver
+                            certificado</a>
+                        <figure class="certificate-imageContainer">
+                            <img class="certificate-image"
+                                src="https://static.platzi.com/media/achievements/1350-09ddb033-354b-4c0c-84a4-56cbb71d0b08.png"
+                                width="50px" />
+                        </figure>
+                    </div>
+                </article>
+                <article class="certificate-element">
+                    <img src="imagenes/repositorio-git.jpg" alt="" class="certificate-imageDiploma" />
+                    <div class="certificate-detail">
+                        <h3 class="certificate-title">
+                            Repositorio GitHub
+                        </h3>
+                        <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Repositorio
+                            GitHub</a>
+                        <figure class="certificate-imageContainer">
+                            <img class="certificate-image"
+                                src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67"
+                                width="50px" />
+                        </figure>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="form-email">
-            <h3>¿Te quieres comunicar conmigo?</h3>
-            <input type="text" placeholder="Deja tu email" />
-            <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form action="/suscripcion/" class="form-email">
+                <h3>¿Te quieres comunicar conmigo?</h3>
+                <input type="text" placeholder="Deja tu email" />
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/DavidF_2028?s=08" class="social-link twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/df.vanegas/" class="social-link instagram" target="_blank"></a>
+            </div>
+        </div>
     </section>
     <footer class="footer">
-        Pie de pagina
+        <div class="container">
+            <div>
+                <p>
+                    Ingeniero de sistemas
+                    <img src="imagenes/border-HTML.jpg" alt="" width="50px">
+                </p>
+            </div>
+            <div>
+                <p>Designed by <a href="https://twitter.com/DavidF_2028?s=08" target="_blank">@DavidF_2028</a></p>
+            </div>
+        </div>
     </footer>
 </body>
 
