@@ -9,20 +9,23 @@ Valores = El valor que se le asigna a cada propiedad
     background: #141414;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height: 100px;
+    height: auto;
     align-items: center;
 }
 
 .header-logo{
     margin: 0 0;
+    display: flex;
+    align-items: center;
 }
 .header img{
     vertical-align: middle;
 }
 
 .header-menu{
-    width: 500px;
+    width: 50%;
     height: inherit;
 }
 .header-menu ol{ /*Este es un selector descendente = Por todos los hijos que tiene la ruta */
@@ -32,7 +35,8 @@ Valores = El valor que se le asigna a cada propiedad
     width: inherit;
     justify-content: space-between;
     padding: 0;
-    margin: 0px 10px;
+    margin: 0px auto;
+    width: 100%;
 }
 .header-menu ol li{
     height: inherit;
@@ -62,16 +66,13 @@ h4,
 h5,
 h6{
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 800;
 }
 
 ol{
     list-style: none;
 }
 
-ul{
-    line-height: 35px;
-}
 
 h1{
     line-height: 40px;
@@ -86,7 +87,17 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
+}
+.hero-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-container h1{
+    margin-left: 25px;
+    width: 50%;
 }
 .hero-image{
     object-fit: cover;
@@ -103,6 +114,7 @@ h1{
     background: white;
     padding: 10px; 
     display: flex;
+    flex-wrap: wrap;
     width: 620px;
     align-items: center;
     justify-content: space-between ;
@@ -111,12 +123,15 @@ h1{
     font-size: 35px;
 }
 .portfolio-elementsProject-details{
-    width: 600px;
-    margin: 0px auto;
+    width: 50%;
 }
 .project-imageContainer{
-    width: 300px;
-    margin: 0px auto;
+    width: 50%;
+    margin: 0;
+    text-align: center;
+}
+.project-imageContainer img{
+    width: 70%;
 }
 .fa{
     margin-left: 25px;
@@ -148,6 +163,7 @@ h1{
 
 .footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #141414;
@@ -165,6 +181,7 @@ h1{
 }
 
 .certificate{
+
     padding: 20px;
 }
 .certificate-list{
@@ -173,9 +190,9 @@ h1{
     flex-wrap: wrap;
 }
 .certificate-element{
-    width: 410px;
-    border: #141414 1px solid;
-    margin: 20px 10px;
+    width: 47.5%;
+    margin: 1%;
+    border: 1px solid #141414;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,13 +206,14 @@ h1{
 }
 .certificate-imageDiploma{
     height: 270px;
-    width: 410px;
+    width: 100%;
     object-fit: cover;
 }
 .certificate-imageContainer{
     margin: 5px;
 }
 .certificate-detail{
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,6 +223,7 @@ h1{
     padding: 10px;
     margin: -40px 20px 20px 20px;
     text-align: center;
+    width: 50%;
 }
 .certificate-link{
     border: 1px #141414 solid;
@@ -217,10 +236,10 @@ h1{
 .contact{
     background-color: #056fff;
     color: white;
-    height: 130px;
     display: flex;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -238,12 +257,13 @@ h1{
     margin: 0px 15px;
 }
 .form-email button{
+    border-radius: 10px;
     display: block;
     margin: 10px;
     background-color: transparent;
     color: white;
-    border-color: white;
-    padding: 5px 20px;
+    border: 1px solid white;
+    padding: 10px 30px;
     margin-left: 0;
 }
 
@@ -263,10 +283,107 @@ h1{
 }
 .container{
     /* border: 1px red solid; */
-    width: 1000px;
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
     margin: 0 auto;
     display: inherit;
+    flex-wrap: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
+}
+
+/* Desktop first que empieces desde el MQ mas grande */
+
+@media screen and (max-width: 1024px){ 
+    .container{
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 767px){ 
+    .header{
+        display: block;
+        height: auto;
+    }
+    .header-menu{
+        width: 100%;
+    }
+    .header-menu ol{
+        display: block;
+        margin: 0;
+    }
+    .header-menu ol li{
+        height: 45px;
+    }
+    .header a{
+        justify-content: center;
+    }
+    .header-logo{
+        display: flex;
+        justify-content: center;
+        margin-left: -40px;
+    }
+
+    .portfolio-elementsProject{
+        display: block;
+    }
+
+    .portfolio-elementsProject-details{
+        width: auto;
+        font-size: 16px;
+    }
+    .portfolio-elementsProject-title{
+        font-size: 2em;
+        margin: .4em 0;
+    }
+    .project-course{
+        font-size: 1em;
+        margin: .4em 0;
+    }
+
+    .project-imageContainer{
+        width: auto;
+    }
+    .project-imageContainer img{
+        max-width: 40%;
+    }
+
+    .certificate-element{
+        width: 100%;
+        flex-shrink: 1;
+    }
+
+}
+
+@media screen and (max-width: 480px){ 
+    .portfolio-elementsProject-details{
+        font-size: 12px;
+    }
+    .certificate-detail{
+        width: 75%;
+    }
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        justify-content: center;
+    }
+
+    .form-email{
+        text-align: center;
+    }
+    .form-email button{
+        margin: 3% auto;
+    }
+
+    .footer{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px){ 
+    body{
+        /* border: green 15px solid; */
+    }
 }

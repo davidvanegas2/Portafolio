@@ -7,22 +7,31 @@
         David Vanegas
     </title>
     <link rel="icon" type="image/jpg" href="imagenes/logo_size.jpg" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/Styles.css">
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"> Llamar un query media-->
     <script src="https://use.fontawesome.com/d1e5c23823.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale: 1">
+    <!--     <style> LLAMAR UN QUERY MEDIA
+        @media screen and (max-width: 768px){
+            body{
+                border: 10px solid violet;
+            }
+        }
+    </style> -->
 </head>
 
 <body>
     <header class="header">
         <div class="container">
             <figure class="header-logo">
+                <img src="https://i.imgur.com/JupsNpi.jpg" alt="Logo" width="100px" />
                 <p>
-                    <img src="https://i.imgur.com/JupsNpi.jpg" alt="Logo" width="100px" />
                     ALANCA
                 </p>
             </figure>
-    
+
             <nav class="header-menu">
                 <ol>
                     <li>
@@ -38,16 +47,17 @@
             </nav>
         </div>
     </header>
-    <section class="hero">
-        <div class="container">
+    <!-- <section class="hero">
+        <div class="hero-container">
             <h1>
-                Hola! Soy <strong>David Vanegas</strong> <br> Estudiante y desarrollador siempre buscando <br> creatividad y
+                Hola! Soy <strong>David Vanegas</strong> <br> Estudiante y desarrollador siempre buscando <br>
+                creatividad y
                 amor por la <strong>web</strong>
             </h1>
             <img class="hero-image" src="https://i.imgur.com/RTfNfSq.jpg" alt="" width="400px">
         </div>
-    </section>
-    <section class="portfolio" id="portafolio">
+    </section> -->
+    <!-- <section class="portfolio" id="portafolio">
         <div class="container">
             <h2>
                 <strong>Portafolio</strong>
@@ -56,19 +66,21 @@
                 <article class="portfolio-elementsProject">
                     <div class="portfolio-elementsProject-details">
                         <h3 class="portfolio-elementsProject-title">HTML5</h3>
-                        <p class="project-course">HTML5 es la última versión de HTML. El término representa dos conceptos
+                        <p class="project-course">HTML5 es la última versión de HTML. El término representa dos
+                            conceptos
                             diferentes:</p>
                         <nav>
                             <ul>
                                 <li>
-                                    Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos
+                                    Se trata de una nueva versión de HTML, con nuevos elementos, atributos y
+                                    comportamientos
                                 </li>
                             </ul>
                         </nav>
                     </div>
-    
+
                     <figure class="project-imageContainer" style="font-size: 34px;">
-                        <i class="fa fa-html5 fa-5x"></i>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="">
                     </figure>
                 </article>
                 <article class="portfolio-elementsProject">
@@ -78,64 +90,72 @@
                             Cascada. Trae consigo muchas novedades altamente esperadas , como las esquinas redondeadas,
                             sombras, gradientes y muchas cosas mas</P>
                     </div>
-    
+
                     <figure class="project-imageContainer" style="font-size: 30px;">
                         <i class="fa fa-css3 fa-5x"></i>
                     </figure>
                 </article>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <h2>Certificados</h2>
+
     <section class="certificate">
-        <div class="container">
-            <h2>Certificados</h2>
-            <div class="certificate-list">
-                <article class="certificate-element">
-                    <img src="https://cdn-blog.bricogeek.com/img_cms/3269-curso-practico-de-git-y-github-desde-cero-en-video.jpg" alt="" class="certificate-imageDiploma" />
-                    <div class="certificate-detail">
-                        <h3 class="certificate-title">
-                            Curso profesional de Git y GitHub
-                        </h3>
-                        <a class="certificate-link" href="https://platzi.com/@davidf_2028/curso/1557-course/diploma/detalle/" target="_blank">Ver
-                            certificado</a>
-                        <figure class="certificate-imageContainer">
-                            <img class="certificate-image"
-                                src="https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png"
-                                width="50px" />
-                        </figure>
-                    </div>
-                </article>
-                <article class="certificate-element">
-                    <img src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1566492620/content-items/003/212/919/2-original.png?1566492620" alt="" class="certificate-imageDiploma" />
-                    <div class="certificate-detail">
-                        <h3 class="certificate-title">
-                            Curso de desarrollo web online
-                        </h3>
-                        <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Ver
-                            certificado</a>
-                        <figure class="certificate-imageContainer">
-                            <img class="certificate-image"
-                                src="https://static.platzi.com/media/achievements/1350-09ddb033-354b-4c0c-84a4-56cbb71d0b08.png"
-                                width="50px" />
-                        </figure>
-                    </div>
-                </article>
-                <article class="certificate-element">
-                    <img src="https://github.githubassets.com/images/modules/open_graph/github-logo.png" alt="" class="certificate-imageDiploma" />
-                    <div class="certificate-detail">
-                        <h3 class="certificate-title">
-                            Repositorio GitHub
-                        </h3>
-                        <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Repositorio
-                            GitHub</a>
-                        <figure class="certificate-imageContainer">
-                            <img class="certificate-image"
-                                src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67"
-                                width="50px" />
-                        </figure>
-                    </div>
-                </article>
-            </div>
+        <div class="certificate-list">
+            <article class="certificate-element">
+                <img src="https://cdn-blog.bricogeek.com/img_cms/3269-curso-practico-de-git-y-github-desde-cero-en-video.jpg"
+                    alt="" class="certificate-imageDiploma" />
+                <div class="certificate-detail">
+                    <h3 class="certificate-title">
+                        Curso profesional de Git y GitHub
+                    </h3>
+                    <a class="certificate-link"
+                        href="https://platzi.com/@davidf_2028/curso/1557-course/diploma/detalle/" target="_blank">Ver
+                        certificado</a>
+                    <figure class="certificate-imageContainer">
+                        <img class="certificate-image"
+                            src="https://static.platzi.com/media/achievements/badge-github-0b729570-934d-47d8-ba6b-610d7f15e0ec.png"
+                            width="50px" />
+                    </figure>
+                </div>
+            </article>
+            <article class="certificate-element">
+                <!-- <img src="https://cdn.domestika.org/c_limit,dpr_auto,f_auto,q_auto,w_820/v1566492620/content-items/003/212/919/2-original.png?1566492620"
+                    alt="" class="certificate-imageDiploma" /> -->
+                    <img src="https://cdn-blog.bricogeek.com/img_cms/3269-curso-practico-de-git-y-github-desde-cero-en-video.jpg"
+                    alt="" class="certificate-imageDiploma" />
+                <div class="certificate-detail">
+                    <h3 class="certificate-title">
+                        Curso de desarrollo web online
+                    </h3>
+                    <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Ver
+                        certificado</a>
+                    <figure class="certificate-imageContainer">
+                        <img class="certificate-image"
+                            src="https://static.platzi.com/media/achievements/1350-09ddb033-354b-4c0c-84a4-56cbb71d0b08.png"
+                            width="50px" />
+                    </figure>
+                </div>
+            </article>
+            <article class="certificate-element">
+                <!-- <img src="https://github.githubassets.com/images/modules/open_graph/github-logo.png" alt=""
+                    class="certificate-imageDiploma" /> -->
+                    <img src="https://cdn-blog.bricogeek.com/img_cms/3269-curso-practico-de-git-y-github-desde-cero-en-video.jpg"
+                    alt="" class="certificate-imageDiploma" />
+                <div class="certificate-detail">
+                    <h3 class="certificate-title">
+                        Repositorio GitHub
+                    </h3>
+                    <a class="certificate-link" href="https://github.com/davidvanegas2" target="_blank">Repositorio
+                        GitHub</a>
+                    <figure class="certificate-imageContainer">
+                        <img class="certificate-image"
+                            src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67"
+                            width="50px" />
+                    </figure>
+                </div>
+            </article>
         </div>
     </section>
     <section id="contacto" class="contact">
